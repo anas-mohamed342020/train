@@ -8,7 +8,7 @@ config({ path: path.resolve('config/.env') })
 const port = process.env.port || 5000
 
 app.get('/', (req, res) => res.send('Anas Anas'))
-app.get('/send',(req,res)=>{
+app.get('*',(req,res)=>{
     res.json(req.query) 
     // anas
 })
